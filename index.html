@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Formation interactive pour maîtriser HTML, CSS et JavaScript" />
+  <title>WebMaster Academy — Apprendre HTML, CSS & JS</title>
+  <meta name="theme-color" content="#667eea" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23667eea'/><text y='.9em' x='10' font-size='80'>🎓</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__brand" data-route="home">
+      <span class="navbar__logo">🎓</span>
+      <span class="navbar__title">WebMaster Academy</span>
+    </div>
+    <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+<nav class="navbar__menu" id="navMenu">
+  <button class="nav-btn" data-route="home">Accueil</button>
+  <button class="nav-btn" data-route="module-html">HTML</button>
+  <button class="nav-btn" data-route="module-css">CSS</button>
+  <button class="nav-btn" data-route="module-js">JavaScript</button>
+  <button class="nav-btn" data-route="projects">🚀 Projets</button>
+  <button class="nav-btn" data-route="guide">📖 Guide</button>
+  <button class="nav-btn" data-route="certificate"> Certificat</button>
+  <button class="theme-toggle" id="themeToggle" title="Changer de thème">🌙</button>
+</nav>
+    <div class="navbar__progress">
+      <span class="progress-label">Progression</span>
+      <div class="progress-bar"><div class="progress-bar__fill" id="globalProgress"></div></div>
+      <span class="progress-value" id="globalProgressValue">0%</span>
+    </div>
+  </header>
+  <main id="app" class="app"></main>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="js/data.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/editor.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/certificate.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/projects-bonus.js"></script>
+  <script src="js/guide.js"></script>
+  <script src="js/pwa.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
